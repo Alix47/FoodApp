@@ -1,37 +1,20 @@
+
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header.js";
-import Body from "./components/Body.js";
-import About from "./components/About.js";
-// import Footer from "./components/Footer.js";
-import Contact from "./components/Contact.js";
-import Error from "./components/Error.js";
-import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom"
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import About from "./Components/About";
+import Error from "./Components/Error";
+import Contact from "./Components/Contact";
+import RestaurantMenu from "./Components/RestaurantMenu";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
 
-
-// Footer component for footer section
-const Footer = () => {
-  return (
-    <div className="footer">
-      Created By
-      <i class="fa-solid fa-heart"></i>
-      <a href="#" target="_blank">
-        ALI
-      </a>
-      <i class="fa-solid fa-copyright"></i>2023
-      <strong>
-        Food<span>Fire</span>
-      </strong>
-    </div>
-  );
-};
-
-// AppLayout component to show: Header, Body, Footer
 const AppLayout = () => {
   return (
     <React.Fragment>
       <Header />
       <Outlet />
+      <Footer />
     </React.Fragment>
   );
 };
@@ -40,10 +23,11 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
-        element: <Body />
+        element: <Body />,
       },
       {
         path: "/about",
@@ -51,12 +35,18 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact />
-      }
+        element: <Contact />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <RestaurantMenu />,
+      },
     ],
-    errorElement: <Error/>
-  }
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
 ]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter} />);
+root.render(<RouterProvider router={appRouter} />); 
