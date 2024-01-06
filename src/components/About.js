@@ -11,7 +11,7 @@ const About = () => {
         </h4>
       </div>
       <div className="about-right">
-        <img src={food} alt="Food Image" />
+        <img src="" alt="Food Image" />
       </div>
     </div>
   );

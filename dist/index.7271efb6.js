@@ -2948,133 +2948,87 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _headerJs = require("./components/Header.js");
-var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
-var _bodyJs = require("./components/Body.js");
-var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
-var _aboutJs = require("./components/About.js");
-var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
-// import Footer from "./components/Footer.js";
-var _contactJs = require("./components/Contact.js");
-var _contactJsDefault = parcelHelpers.interopDefault(_contactJs);
-var _errorJs = require("./components/Error.js");
-var _errorJsDefault = parcelHelpers.interopDefault(_errorJs);
-var _reactRouterDom = require("react-router-dom");
-// Footer component for footer section
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
-        children: [
-            "Created By",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                class: "fa-solid fa-heart"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                target: "_blank",
-                children: "ALI"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                class: "fa-solid fa-copyright"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            "2023",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                children: [
-                    "Food",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: "Fire"
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 23,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 15,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Footer;
-// AppLayout component to show: Header, Body, Footer
+var _header = require("./components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _about = require("./components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _error = require("./components/Error");
+var _errorDefault = parcelHelpers.interopDefault(_error);
+var _contact = require("./components/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _restaurantCard = require("./components/RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _reactRouterDom = require("react-router-dom"); // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 33,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 34,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 32,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
-_c1 = AppLayout;
+_c = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 42,
+            lineNumber: 24,
             columnNumber: 14
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 25,
+            columnNumber: 19
         }, undefined),
         children: [
             {
                 path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 46,
+                    lineNumber: 29,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 50,
+                    lineNumber: 33,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 54,
+                    lineNumber: 37,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/restaurant/:resId",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 41,
                     columnNumber: 18
                 }, undefined)
             }
-        ],
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 57,
-            columnNumber: 19
-        }, undefined)
+        ]
     }
 ]);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
@@ -3082,19 +3036,18 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 62,
+    lineNumber: 47,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "Footer");
-$RefreshReg$(_c1, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header.js":"hsJbF","./components/Body.js":"8yaV8","./components/About.js":"9R1Eu","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Contact.js":"cgAOG","./components/Error.js":"kvula"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Error":"kvula","./components/Contact":"cgAOG","./components/RestaurantCard":"bMboU","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27291,292 +27244,156 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constants = require("../utils/constants");
+var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "logo",
+            src: "",
+            alt: "Food Fire Logo",
+            title: "Food Fire Logo"
+        }, void 0, false, {
+            fileName: "src/components/Header.js",
+            lineNumber: 7,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Header.js",
+        lineNumber: 6,
+        columnNumber: 3
+    }, undefined);
+_c = Title;
 const Header = ()=>{
+    _s();
+    const [isLoggedin, setIsLoggedin] = (0, _react.useState)(true);
+    const navigate = (0, _reactRouterDom.useNavigate)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "logo",
-                    src: (0, _constants.LOGO_URL),
-                    alt: "Food Fire Logo"
-                }, void 0, false, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 8,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 7,
-                columnNumber: 9
+                lineNumber: 22,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 12,
-                                columnNumber: 17
+                                lineNumber: 26,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 12,
-                            columnNumber: 13
+                            lineNumber: 25,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 13,
-                                columnNumber: 17
+                                lineNumber: 29,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 13,
-                            columnNumber: 13
+                            lineNumber: 28,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 14,
-                                columnNumber: 17
+                                lineNumber: 33,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 14,
-                            columnNumber: 13
+                            lineNumber: 32,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                class: "fa-solid fa-cart-shopping"
+                                className: "fa-solid fa-cart-shopping"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 15,
-                                columnNumber: 17
+                                lineNumber: 36,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 15,
-                            columnNumber: 13
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: isLoggedin ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "logout-btn",
+                                onClick: ()=>setIsLoggedin(false),
+                                children: "Logout"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 40,
+                                columnNumber: 15
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "login-btn",
+                                onClick: ()=>navigate("/login"),
+                                children: "Login"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 47,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 38,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 11,
-                    columnNumber: 11
+                    lineNumber: 24,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 10,
-                columnNumber: 9
+                lineNumber: 23,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 6,
-        columnNumber: 7
+        lineNumber: 21,
+        columnNumber: 5
     }, undefined);
 };
-_c = Header;
+_s(Header, "EjHWUBCneO2NdNDWKYdcLvMEIHI=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c1 = Header;
 exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "Header");
 
   $parcel$ReactRefreshHelpers$bfed.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"hB8jg":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
-parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
-const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const LOGO_URL = "";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.21.1
  *
@@ -34044,7 +33861,175 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34056,26 +34041,141 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _mockData = require("../utils/mockData");
-var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
+var _react = require("react"); /* This is named export */ 
+var _constants = require("../utils/constants");
+var _reactRouterDom = require("react-router-dom");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+// Filter the restaurant data according input type
+function filterData(searchText, restaurants) {
+    const resFilterData = restaurants.filter((restaurant)=>restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase()));
+    return resFilterData;
+}
+// Body Component for body section: It contain all restaurant cards
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-list",
-        children: (0, _mockDataDefault.default).map((restaurant)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                ...restaurant.data
-            }, restaurant.data.id, false, {
+    _s();
+    // useState: To create a state variable, searchText, allRestaurants and filteredRestaurants is local state variable
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [errorMessage, setErrorMessage] = (0, _react.useState)("");
+    // use useEffect for one time call getRestaurants using empty dependency array
+    (0, _react.useEffect)(()=>{
+        getRestaurants();
+    }, []);
+    // async function getRestaurant to fetch Swiggy API data
+    async function getRestaurants() {
+        // handle the error using try... catch
+        try {
+            const response = await fetch((0, _constants.swiggy_api_URL));
+            const json = await response.json();
+            // initialize checkJsonData() function to check Swiggy Restaurant data
+            async function checkJsonData(jsonData) {
+                for(let i = 0; i < jsonData?.data?.cards.length; i++){
+                    // initialize checkData for Swiggy Restaurant data
+                    let checkData = json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+                    // if checkData is not undefined then return it
+                    if (checkData !== undefined) return checkData;
+                }
+            }
+            // call the checkJsonData() function which return Swiggy Restaurant data
+            const resData = await checkJsonData(json);
+            // update the state variable restaurants with Swiggy API data
+            setAllRestaurants(resData);
+            setFilteredRestaurants(resData);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    // use searchData function and set condition if data is empty show error message
+    const searchData = (searchText, restaurants)=>{
+        if (searchText !== "") {
+            const filteredData = filterData(searchText, restaurants);
+            setFilteredRestaurants(filteredData);
+            setErrorMessage("");
+            if (filteredData?.length === 0) setErrorMessage(`Sorry, we couldn't find any results for "${searchText}"`);
+        } else {
+            setErrorMessage("");
+            setFilteredRestaurants(restaurants);
+        }
+    };
+    // if allRestaurants is empty don't render restaurants cards
+    if (!allRestaurants) return null;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "search-input",
+                        placeholder: "Search a restaurant you want...",
+                        value: searchText,
+                        // update the state variable searchText when we typing in input box
+                        onChange: (e)=>setSearchText(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 81,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        onClick: ()=>{
+                            // user click on button searchData function is called
+                            searchData(searchText, allRestaurants);
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 89,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 8,
-                columnNumber: 18
-            }, undefined);
-        })
-    }, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 6,
-        columnNumber: 7
-    }, undefined);
+                lineNumber: 80,
+                columnNumber: 7
+            }, undefined),
+            errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "error-container",
+                children: errorMessage
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 99,
+                columnNumber: 24
+            }, undefined),
+            allRestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 103,
+                columnNumber: 9
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-list",
+                children: filteredRestaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/restaurant/" + restaurant?.info?.id,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                            ...restaurant?.info
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 113,
+                            columnNumber: 17
+                        }, undefined)
+                    }, restaurant?.info?.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 109,
+                        columnNumber: 15
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 105,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
 };
+_s(Body, "+HhlMwbQ+xUSNXFpTBqVZVGNDfk=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -34086,7 +34186,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","../utils/mockData":"iOpE9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","react":"21dqq","../utils/constants":"hB8jg","react-router-dom":"9xmpe","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34097,81 +34197,103 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("../utils/constants");
-const RestaurantCard = ({ cloudinaryImageId, name, cuisines, area, lastMileTravelString, costForTwoString, avgRating })=>{
+const RestaurantCard = ({ cloudinaryImageId, name, cuisines, areaName, sla, costForTwo, avgRatingString })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _constants.CDN_URL) + cloudinaryImageId
+                src: (0, _constants.IMG_CDN_URL) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
                 lineNumber: 14,
-                columnNumber: 9
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 17,
-                columnNumber: 9
+                lineNumber: 15,
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 18,
-                columnNumber: 9
+                lineNumber: 16,
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: area
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                children: areaName
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 19,
-                columnNumber: 9
+                lineNumber: 17,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        style: avgRatingString < 4 ? {
+                            backgroundColor: "var(--light-red)"
+                        } : avgRatingString === "--" ? {
+                            backgroundColor: "white",
+                            color: "black"
+                        } : {
+                            color: "white"
+                        },
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                class: "fa-solid fa-star"
+                                className: "fa-solid fa-star"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantCard.js",
-                                lineNumber: 21,
-                                columnNumber: 13
+                                lineNumber: 28,
+                                columnNumber: 11
                             }, undefined),
-                            avgRating
+                            avgRatingString
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 21,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: lastMileTravelString
+                        children: "\u2022"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 22,
-                        columnNumber: 11
+                        lineNumber: 31,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: costForTwoString
+                        children: sla?.lastMileTravelString ?? "2.0 km"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 23,
-                        columnNumber: 11
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: "\u2022"
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: costForTwo ?? "\u20B9200 for two"
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 34,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 20,
-                columnNumber: 9
+                lineNumber: 18,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCard.js",
         lineNumber: 13,
-        columnNumber: 7
+        columnNumber: 5
     }, undefined);
 };
 _c = RestaurantCard;
@@ -34184,1860 +34306,276 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iOpE9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
+// Image CDN URL for Restaurant card
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const restaurantList = [
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "74453",
-            name: "Domino's Pizza",
-            uuid: "87727dbd-7f2b-4857-9763-359624165845",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "bz9zkh2aqywjhpankb07",
-            cuisines: [
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 40000,
-            costForTwoString: "\u20B9400 FOR TWO",
-            deliveryTime: 45,
-            minDeliveryTime: 45,
-            maxDeliveryTime: 45,
-            slaString: "45 MINS",
-            lastMileTravel: 0,
-            slugs: {
-                restaurant: "dominos-pizza-majura-nondh-test_surat",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop 32 To 35, Sheetal Shopping Square,Near Lb Turning Point, Bhatar Road,MAJURA NONDH, Surat,GUJARAT-395001",
-            locality: "Bhatar Road",
-            parentId: 2456,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "74453",
-                deliveryTime: 45,
-                minDeliveryTime: 45,
-                maxDeliveryTime: 45,
-                lastMileTravel: 0,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "410476",
-            name: "The Brooklyn Creamery - Healthy Ice Cream",
-            uuid: "82e23b48-b6bd-4ee0-9746-06737ec062b0",
-            city: "21",
-            area: "althan bhatar",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "ldtibwymvzehvmdwl8la",
-            cuisines: [
-                "Desserts",
-                "Ice Cream",
-                "Healthy Food"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 6.300000190734863,
-            slugs: {
-                restaurant: "the-brooklyn-creamery-low-cal-ice-cream-adajan-fc-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "C paiki, Chalta no. 23, Guru Ashish Building, Ground Floor, Opp Kotyark Nagar, Rander Road, Surat 395005",
-            locality: "Adajan FC",
-            parentId: 236673,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "410476",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 6.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.4",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "81094",
-            name: "Richie Rich Juices & Shakes",
-            uuid: "40b0b55b-e9af-43e7-aeae-be1b012d0b1d",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "500+ ratings",
-            cloudinaryImageId: "nyp7yrzwc1dc2xqfkydk",
-            cuisines: [
-                "Ice Cream"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "\u20B9250 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 5.599999904632568,
-            slugs: {
-                restaurant: "juices-shakes-by-richie-rich-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Richie Rich Building , Opposite Golden Square Complex, Parle Point, Athwa, Surat",
-            locality: "Parle Point",
-            parentId: 771,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "5.5 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "81094",
-                deliveryTime: 30,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 5.599999904632568,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 500,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "311443",
-            name: "Siddhi Icecream & Thick Shake",
-            uuid: "1ca3e8c2-e5da-4b59-8f7e-868991cb40b7",
-            city: "21",
-            area: "Nanpura",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "spd3y5gok3vvwqulgmda",
-            cuisines: [
-                "Ice Cream",
-                "Juices",
-                "Desserts",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 3,
-            slugs: {
-                restaurant: "siddhi-icecream-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "siddhi icecream, Kadampally Society, Timaliawad, Nanpura, Surat, Gujarat, India",
-            locality: "Athwa",
-            parentId: 387846,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "311443",
-                deliveryTime: 30,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 3,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.5",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "307070",
-            name: "Pizza Pie",
-            uuid: "68598bcb-7460-4466-a8b2-113158c6cf8c",
-            city: "21",
-            area: "Nanpura",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "bvr70adr30ejyr5ua79k",
-            cuisines: [
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "\u20B9300 FOR TWO",
-            deliveryTime: 37,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 4,
-            slugs: {
-                restaurant: "pizza-pie-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "1/704 Sarang building, Nanpura New Rd, opposite river palace, near Ramji Mandir, Nanpura, Surat, Gujarat",
-            locality: "Nanpura",
-            parentId: 158854,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "307070",
-                deliveryTime: 37,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 4,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "76858",
-            name: "Feeling Hungry",
-            uuid: "45f9ea54-f3cf-4f6b-8d85-e3468657fe51",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "oxsb5mr1xsmhnxhunjsc",
-            cuisines: [
-                "Chinese",
-                "North Indian",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 2000,
-            costForTwoString: "\u20B920 FOR TWO",
-            deliveryTime: 35,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 3.700000047683716,
-            slugs: {
-                restaurant: "feeling-hungry-adajan-gam-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "GF shop no 1, Babubhai Chambers, Beside Sardar Bridge , Athwagate, surat",
-            locality: "Royal Residency, Adajan Gam",
-            parentId: 79237,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3.7 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "76858",
-                deliveryTime: 35,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 3.700000047683716,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.2",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "617279",
-            name: "Malaxmi Fast Food",
-            uuid: "4848cb1b-b1c4-4a6e-9a6d-f96b781357db",
-            city: "21",
-            area: "Adajan",
-            totalRatingsString: "20+ ratings",
-            cloudinaryImageId: "agkm7cflq72tkualhstb",
-            cuisines: [
-                "Fast Food",
-                "Pizzas",
-                "Snacks",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 44,
-            minDeliveryTime: 40,
-            maxDeliveryTime: 50,
-            slaString: "40-50 MINS",
-            lastMileTravel: 9.100000381469727,
-            slugs: {
-                restaurant: "mahalaxmi-fast-food-adajan-adajan-2",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "shop no 15,palanpur food zone,opp.sai trith,pal gam suart",
-            locality: "Palanpur Food Zone",
-            parentId: 373635,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "9.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "617279",
-                deliveryTime: 44,
-                minDeliveryTime: 40,
-                maxDeliveryTime: 50,
-                lastMileTravel: 9.100000381469727,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 20,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "469264",
-            name: "Dessert House",
-            uuid: "7a320917-c577-49cb-875a-1e585a3adbc1",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "jegpumsjcmomksbr2sxr",
-            cuisines: [
-                "Desserts",
-                "Ice Cream"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "\u20B9150 FOR TWO",
-            deliveryTime: 27,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 6.199999809265137,
-            slugs: {
-                restaurant: "dessert-house-piplod-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "SHOP NO 2, MARVELLA CORRIDOR OPP. C B PATEL HEALTH CLUB V.I.P ROAD, VESU",
-            locality: "Piplod",
-            parentId: 71430,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "469264",
-                deliveryTime: 27,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 6.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.5",
-            totalRatings: 0,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "395204",
-            name: "McDonald's Gourmet Burger Collection",
-            uuid: "55c33a9b-bb51-4b9d-8c94-708d48b08ebd",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "wzbo5xivr8hstl0vxzcm",
-            cuisines: [
-                "Burgers",
-                "Beverages",
-                "Cafe",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "\u20B9500 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 8.199999809265137,
-            slugs: {
-                restaurant: "mcdonalds-gourmet-burger-collection-valentine-cinema-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "MC Donalds Family Restaurant Valentine Mall Valentine Cine Vision Surat , Dhumas Road, Nr Govardhan Haveli, Surat 395007",
-            locality: "Valentine Cinema",
-            parentId: 10761,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "8.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "395204",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 8.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "193541",
-            name: "Behrouz Biryani",
-            uuid: "abc2e9d1-df00-4449-bde3-4c35982d0ef3",
-            city: "21",
-            area: "Adajan Patiya",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "craozjakzx7sll2uracb",
-            cuisines: [
-                "Biryani",
-                "Mughlai",
-                "Lucknowi",
-                "Hyderabadi",
-                "Kebabs",
-                "North Indian",
-                "Persian",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "\u20B9500 FOR TWO",
-            deliveryTime: 49,
-            minDeliveryTime: 45,
-            maxDeliveryTime: 55,
-            slaString: "45-55 MINS",
-            lastMileTravel: 6.400000095367432,
-            slugs: {
-                restaurant: "behrouz-biryani-adajan-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Chalta no 23, Ground Floor, Guru Ashish Building, Below Stallon Gym, Opp Kotyark Nagar, Near Navyug College, Adajan, Surat 395005",
-            locality: "Nr Navyug College, Rander Road",
-            parentId: 1803,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.4 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "193541",
-                deliveryTime: 49,
-                minDeliveryTime: 45,
-                maxDeliveryTime: 55,
-                lastMileTravel: 6.400000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.3",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "475510",
-            name: "Momos House",
-            uuid: "34320d9a-ffa7-450c-ad61-d50485306626",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "vmold2zualdrrypxcvue",
-            cuisines: [
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 6.199999809265137,
-            slugs: {
-                restaurant: "momo\u2019s-house-piplod-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "SHOP NO - 2, MARVELLA CORRIDOR, OPP. C B PATEL HEALTH CLUB, V.I.P. ROAD, Surat,, Vesu , Surat Municipal Corporation, Surat Municipal Corporation, Gujarat - 395007",
-            locality: "Vesu",
-            parentId: 15884,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "475510",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 6.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 0,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "127596",
-            name: "Sabir Chicken",
-            uuid: "f0f49821-52ed-4435-9014-c845e964a3d8",
-            city: "21",
-            area: "Chowk Bazar",
-            totalRatingsString: "5000+ ratings",
-            cloudinaryImageId: "kilrdjqt8chduasii5ni",
-            cuisines: [
-                "North Indian",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "\u20B9300 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 4.300000190734863,
-            slugs: {
-                restaurant: "sabir-chicken-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Nehru Bridge, Behind Nagin Chand Hall, Chowk Bazar, Surat, Gujarat 395003",
-            locality: "Chowk Bazar",
-            parentId: 173978,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "127596",
-                deliveryTime: 30,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 4.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 5000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "64656",
-            name: "Mahesh Pav Bhaji",
-            uuid: "ccfda4b9-82b1-4f22-9567-eb98c448b267",
-            city: "21",
-            area: "Adajan",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "84d3bea985f13bd980dc39c9c73bc87f",
-            cuisines: [
-                "Desserts",
-                "Chinese",
-                "South Indian",
-                "Ice Cream",
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "\u20B9250 FOR TWO",
-            deliveryTime: 36,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 6.900000095367432,
-            slugs: {
-                restaurant: "mahesh-pav-bhaji-adajan-gam-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop 12, Garden View Apartment, Honey Park Road, Adajan Gam, Surat",
-            locality: "Adajan Gam",
-            parentId: 6553,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "30% off",
-                shortDescriptionList: [
-                    {
-                        meta: "30% off | Use JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "30% off up to \u20B9150 on orders above \u20B9400 | Use code JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "30% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "30% off up to \u20B9150 on orders above \u20B9400 | Use code JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.9 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "64656",
-                deliveryTime: 36,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 6.900000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "255204",
-            name: "The Dango Cake Shop",
-            uuid: "dbfd3f3c-77a6-4979-96c4-ce9863e54cdc",
-            city: "21",
-            area: "Galaxy Circle",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "mnvfpsoealkflze4e5qi",
-            cuisines: [
-                "Bakery"
-            ],
-            tags: [],
-            costForTwo: 27000,
-            costForTwoString: "\u20B9270 FOR TWO",
-            deliveryTime: 34,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 7.699999809265137,
-            slugs: {
-                restaurant: "twisted-cake-live-cake-adajan-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "44 La Victoria, galaxy circle pal Surat",
-            locality: "Galaxy Circle",
-            parentId: 207513,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7.6 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "255204",
-                deliveryTime: 34,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 7.699999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "664656",
-            name: "Cheezylicious Cafe",
-            uuid: "5880e561-10ed-4f96-990b-2251e2f09c82",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "fda9ad56b9d62070fec105cd93693129",
-            cuisines: [
-                "Cafe",
-                "Fast Food",
-                "Chinese",
-                "Snacks",
-                "Italian",
-                "Mexican"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "\u20B9150 FOR TWO",
-            deliveryTime: 38,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 7.599999904632568,
-            slugs: {
-                restaurant: "cheezylicious-cafe-piplod-piplod-2",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop no G10 ground floor, aagam square B/S Dream heritage, Canal road, Vesu",
-            locality: "Dream heritage",
-            parentId: 59292,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7.5 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "664656",
-                deliveryTime: 38,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 7.599999904632568,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 0,
-            new: true
-        },
-        subtype: "basic"
-    }
-];
-exports.default = restaurantList;
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+parcelHelpers.export(exports, "ITEM_IMG_CDN_URL", ()=>ITEM_IMG_CDN_URL);
+parcelHelpers.export(exports, "swiggy_api_URL", ()=>swiggy_api_URL);
+parcelHelpers.export(exports, "swiggy_menu_api_URL", ()=>swiggy_menu_api_URL);
+parcelHelpers.export(exports, "shimmer_card_unit", ()=>shimmer_card_unit);
+parcelHelpers.export(exports, "shimmer_menu_card_unit", ()=>shimmer_menu_card_unit);
+parcelHelpers.export(exports, "MENU_ITEM_TYPE_KEY", ()=>MENU_ITEM_TYPE_KEY);
+parcelHelpers.export(exports, "RESTAURANT_TYPE_KEY", ()=>RESTAURANT_TYPE_KEY);
+const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+const ITEM_IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
+const swiggy_api_URL = "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
+const swiggy_menu_api_URL = "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=";
+const shimmer_card_unit = 20;
+const shimmer_menu_card_unit = 4;
+const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
+const RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9R1Eu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MenuShimmer", ()=>MenuShimmer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const CardShimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-img stroke animate"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-title stroke animate"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-tags stroke animate "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-details stroke animate "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = CardShimmer;
+const MenuShimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "restaurant-menu",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-summary stroke-color animate",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "shimmer-img stroke animate"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "restaurant-summary-details",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "shimmer-w40  stroke animate"
+                            }, void 0, false, {
+                                fileName: "src/components/Shimmer.js",
+                                lineNumber: 21,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "shimmer-w20 stroke animate"
+                            }, void 0, false, {
+                                fileName: "src/components/Shimmer.js",
+                                lineNumber: 22,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "shimmer-w60  stroke animate"
+                            }, void 0, false, {
+                                fileName: "src/components/Shimmer.js",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-menu-content",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "menu-items-container",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "menu-title-wrap ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "shimmer-w40 stroke animate"
+                                }, void 0, false, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "shimmer-w20 stroke animate"
+                                }, void 0, false, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Shimmer.js",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "menu-items-list",
+                            children: Array((0, _constants.shimmer_menu_card_unit)).fill("").map((element, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "shimmer-menu-card",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "shimmer-item-details",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    className: "shimmer-w40  stroke animate"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Shimmer.js",
+                                                    lineNumber: 38,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "shimmer-w20  stroke animate",
+                                                    children: " "
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Shimmer.js",
+                                                    lineNumber: 39,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "shimmer-w60  stroke animate"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Shimmer.js",
+                                                    lineNumber: 40,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Shimmer.js",
+                                            lineNumber: 37,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "shimmer-img-wrapper",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "shimmer-img stroke animate"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Shimmer.js",
+                                                    lineNumber: 43,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "shimmer-btn stroke animate",
+                                                    children: " "
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Shimmer.js",
+                                                    lineNumber: 44,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Shimmer.js",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, index, true, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/components/Shimmer.js",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 17,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = MenuShimmer;
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: Array((0, _constants.shimmer_card_unit)).fill("").map((element, index)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardShimmer, {}, index, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 60,
+                columnNumber: 16
+            }, undefined);
+        })
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 57,
+        columnNumber: 5
+    }, undefined);
+};
+_c2 = Shimmer;
+exports.default = Shimmer;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "CardShimmer");
+$RefreshReg$(_c1, "MenuShimmer");
+$RefreshReg$(_c2, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36049,17 +34587,82 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "ABOUT US"
-        }, void 0, false, {
-            fileName: "src/components/About.js",
-            lineNumber: 4,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
+        className: "about-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "about-left",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: [
+                            "Welcome to ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 7,
+                                columnNumber: 22
+                            }, undefined),
+                            " The world of ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 7,
+                                columnNumber: 42
+                            }, undefined),
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Tasty & Fresh Food"
+                            }, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 7,
+                                columnNumber: 49
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.js",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: [
+                            '"Better you will feel if you eat a Food',
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Fire"
+                            }, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 10,
+                                columnNumber: 50
+                            }, undefined),
+                            ' healthy meal"'
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/About.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "about-right",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "",
+                    alt: "Food Image"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 3,
-        columnNumber: 9
+        lineNumber: 4,
+        columnNumber: 5
     }, undefined);
 };
 _c = About;
@@ -36072,38 +34675,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ee46.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Contact"
-    }, void 0, false, {
-        fileName: "src/components/Contact.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Contact;
-exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
-
-  $parcel$ReactRefreshHelpers$ee46.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36143,6 +34715,127 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequire70d3")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ee46.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Contact = ()=>{
+    _s();
+    const [message, setMessage] = (0, _react.useState)(false);
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        setMessage(true);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "contact-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "contact-left",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "",
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 12,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "contact-right",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Contact us"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 15,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                        onSubmit: handleSubmit,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                placeholder: "Name",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 17,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "email",
+                                placeholder: "Email",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                placeholder: "Type your Message here...",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 19,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                children: "Submit"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 20,
+                                columnNumber: 21
+                            }, undefined),
+                            message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Thanks for contacting FoodFire, We will reply ASAP."
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 21,
+                                columnNumber: 33
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Contact.js",
+        lineNumber: 10,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Contact, "n0fnK4ZqApEScFgFl1/p++eCWeA=");
+_c = Contact;
+exports.default = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$ee46.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequire70d3")
 
 //# sourceMappingURL=index.7271efb6.js.map

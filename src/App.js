@@ -2,10 +2,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
-import Body from "./Components/Body";
-import About from "./Components/About";
-import Error from "./Components/Error";
-import Contact from "./Components/Contact";
+import Body from "./components/Body";
+import About from "./components/About";
+import Error from "./components/Error";
+import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantCard";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
 
@@ -14,7 +14,6 @@ const AppLayout = () => {
     <React.Fragment>
       <Header />
       <Outlet />
-      <Footer />
     </React.Fragment>
   );
 };
@@ -42,10 +41,6 @@ const appRouter = createBrowserRouter([
         element: <RestaurantMenu />,
       },
     ],
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
