@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"; /* This is named export */
 import { swiggy_api_URL } from "../utils/constants"
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import { withPromotedLabel } from "./RestaurantCard";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
@@ -20,6 +21,8 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
 
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+  
   // use useEffect for one time call getRestaurants using empty dependency array
   useEffect(() => {
     getRestaurants();
@@ -110,7 +113,10 @@ const Body = () => {
                 to={"/restaurant/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
               >
-                <RestaurantCard {...restaurant?.info} />
+                {/* <RestaurantCard {...restaurant?.info} /> */}
+                {
+                restaurant.info.promoted ? <RestaurantCardPromoted {...restaurant?.info}/> : <RestaurantCard {...restaurant?.info}/>
+              }
               </Link>
             );
           })}
