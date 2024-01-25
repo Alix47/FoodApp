@@ -1,53 +1,46 @@
-import { IMG_CDN_URL } from "../utils/constants"
+import { IMG_CDN_URL } from "../constants";
 
 const RestaurantCard = ({
-  cloudinaryImageId,
   name,
   cuisines,
-  areaName,
-  sla,
+  cloudinaryImageId,
   costForTwo,
-  avgRatingString,
+  avgRating,
+  sla: { deliveryTime = "" },
 }) => {
   return (
-    <div className="card">
-      <img src={IMG_CDN_URL + cloudinaryImageId} />
-      <h3>{name}</h3>
-      <h5>{cuisines.join(", ")}</h5>
-      <h5>{areaName}</h5>
-      <span>
-        <h4
+    <div className="flex flex-col overflow-hidden m-3 p-3 w-60  rounded-sm hover:shadow-xl duration-300 font-poppins bg-white shadow-sm ">
+      {/* {console.log(name, cuisines, cloudinaryImageId, costForTwo, avgRating)} */}
+      <img
+        loading="lazy"
+        className="w-full border rounded-sm"
+        src={IMG_CDN_URL + cloudinaryImageId}
+        alt="image of a dish from the restaurant"
+      ></img>
+      <span className="block font-bold text-md mt-3 ">
+        {name?.length > 20 ? name.slice(0, 20) + "..." : name}
+      </span>
+      <span className="mt-3 text-gray-600 text-xs">{cuisines?.join(", ")}</span>
+      <div className="mt-3 mb-3 flex items-center justify-between">
+        <span
+          className="w-12 text-center border rounded-md text-white text-xs mr-2"
           style={
-            avgRatingString < 4
-              ? { backgroundColor: "var(--light-red)" }
-              : avgRatingString === "--"
-                ? { backgroundColor: "white", color: "black" }
-                : { color: "white" }
+            avgRating >= 4
+              ? { backgroundColor: "#1db458" }
+              : avgRating >= 3
+              ? { backgroundColor: "#DB7C38" }
+              : avgRating === "--"
+              ? { backgroundColor: "#1db458" }
+              : { backgroundColor: "#E31837" }
           }
         >
-          <i className="fa-solid fa-star"></i>
-          {avgRatingString}
-        </h4>
-        <h4>•</h4>
-        <h4>{sla?.lastMileTravelString ?? '2.0 km'}</h4>
-        <h4>•</h4>
-        <h4>{costForTwo ?? '₹200 for two'}</h4>
-      </span>
+          {avgRating} &#9733;
+        </span>
+        <span className="text-xs">{costForTwo}</span>
+        <span className="text-xs ">{deliveryTime} MINS</span>
+      </div>
     </div>
   );
 };
-
-// higher order component
-
-export const withPromotedLabel = (RestaurantCard) =>{
-  return (props) => {
-    return(
-      <div>
-        <label>Promoted</label>
-        <RestaurantCard {...props}/>
-      </div>
-    )
-  }
-}
 
 export default RestaurantCard;
