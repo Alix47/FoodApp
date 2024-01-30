@@ -19,7 +19,7 @@ export const API_URL4 =
 //   CORS_PROXY_URL +
 //   "/dapi/restaurants/list/v5?sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING&";
 
-export const API_URL =
+export const API_URL = CORS_PROXY_URL +
 "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?";
 
 export const API_URL2 =
