@@ -31,7 +31,7 @@ const Body = () => {
 
   async function getRestaurants(url) {
     try {
-      const data = await fetch(`${url}lat=${latitude}&lng=${longitude}`);
+      const data = await fetch(`https://corsproxy.org/?${url}lat=${latitude}&lng=${longitude}`);
       const json = await data.json();
 
       if (url === API_URL3 || offset === 0) {
