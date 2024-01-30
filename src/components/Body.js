@@ -31,7 +31,12 @@ const Body = () => {
 
   async function getRestaurants(url) {
     try {
-      const data = await fetch(`${url}lat=${latitude}&lng=${longitude}`);
+      const data = await fetch(`${url}lat=${latitude}&lng=${longitude}`, {    
+        method: 'GET',    
+        withCredentials: true,    
+        crossorigin: true,    
+        mode: 'no-cors',       
+      });
       const json = await data.json();
 
       if (url === API_URL || offset === 0) {
