@@ -9,18 +9,19 @@ export const IMG__MENU_ITEM_CDN_URL =
 
 export const API_URL4 =
   CORS_PROXY_URL +
-  "/dapi/restaurants/list/v5?page_type=DESKTOP_WEB_LISTING&lat=22.814794130574803&lng=86.09871324151756";
-
+" https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.9079413&lng=78.07660360000001&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
   export const API_URL3 =
-  "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?";
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.9079413&lng=78.07660360000001&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 // export const API_URL3 =
 //   CORS_PROXY_URL +
 //   "/dapi/restaurants/list/v5?sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING&";
 
-export const API_URL = CORS_PROXY_URL +
-"https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?";
+export const API_URL = "https://corsproxy.org/?" +
+encodeURIComponent(
+  "https://www.swiggy.com/dapi/restaurants/list/v5?"
+);
 
 export const API_URL2 =
   CORS_PROXY_URL +
@@ -28,17 +29,14 @@ export const API_URL2 =
 
 // export const FETCH_MENU_URL =
 //   CORS_PROXY_URL + "dapi/menu/v4/full?lat=20.351841&lng=85.805154&menuId=";
-export const FETCH_MENU_URL = CORS_PROXY_URL +
-'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=';
 
-export const GITHUB_LINK = "https://github.com/chinmay021";
+// https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=tr?ue&lat=27.9079413&lng=78.07660360000001&restaurantId=104170&catalog_qa=undefined&submitAction=ENTER
 
-export const GMAIL_LINK = "mailto:chinmaykumar021@gmail.com";
-
-export const LINKEDIN_LINK =
-  "https://www.linkedin.com/in/chinmay-kumar-950754144/";
-
-// export const HERE_MAP_API_KEY = "mPRL5FAIhx5miqZZYRUSUONrrYI5p1-6kt2oG_lTMx8";
+export const FETCH_MENU_URL =
+"https://corsproxy.org/?" +
+encodeURIComponent(
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId="
+);
 
 export const SEARCH_API_URL = " "
 
