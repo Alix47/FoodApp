@@ -28,7 +28,7 @@ export const API_URL2 =
 
 // export const FETCH_MENU_URL =
 //   CORS_PROXY_URL + "dapi/menu/v4/full?lat=20.351841&lng=85.805154&menuId=";
-export const FETCH_MENU_URL =
+export const FETCH_MENU_URL = CORS_PROXY_URL +
 'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=';
 
 export const GITHUB_LINK = "https://github.com/chinmay021";
