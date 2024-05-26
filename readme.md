@@ -33,4 +33,4 @@ This is the foodApp I created with the teaching of Namaste React by Akshay Saini
 -Lazy Loading Implementation: Experience faster load times! FoodStore uses lazy loading to prioritize the display of essential content, optimizing performance and ensuring a swift user journey.
 
 
-NOTE: Due to the public API of swiggy.com website, the api only works for desktop mode and the site(FoodStore) would not have its full functionality on mobile devices.
+NOTE: Due to the public API of swiggy.com website, the api only works for desktop mode and the site(FoodStore) would not have its full functionality on mobile devices. The swiggy API may be depreciated as the URL changes frequently.
