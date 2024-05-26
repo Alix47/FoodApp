@@ -18,7 +18,10 @@ This is the foodApp I created with the teaching of Namaste React by Akshay Saini
 
 -Firebase Authentication: Say goodbye to the hassle with seamless and secure authentication powered by Firebase. Enjoy a personalized experience, exclusive offers, and hassle-free login with just a click!
 
--Shimmer UI for Better User Experience: Experience a touch of magic with Shimmer UI! Delight your senses with smooth and elegant loading animations, making your journey through FoodStore not just functional but visually stunning.
+-Shimmer UI for Better User Experience: Experience a touch of
+
+
+ magic with Shimmer UI! Delight your senses with smooth and elegant loading animations, making your journey through FoodStore not just functional but visually stunning.
 
 -Swiggy Public API for Restaurants Data: Thanks to Swiggy's powerful API, FoodStore brings you a vast array of restaurants at your fingertips. Explore diverse cuisines, browse menus, and discover new favorites effortlessly.
 
@@ -34,3 +37,4 @@ This is the foodApp I created with the teaching of Namaste React by Akshay Saini
 
 
 NOTE: Due to the public API of swiggy.com website, the api only works for desktop mode and the site(FoodStore) would not have its full functionality on mobile devices. The swiggy API may be depreciated as the URL changes frequently.
+https://github.com/Alix47/FoodApp/assets/137501187/1836abe5-7528-4840-982f-a458252aef52
