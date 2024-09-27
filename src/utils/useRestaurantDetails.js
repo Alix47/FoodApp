@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { FETCH_MENU_URL } from "../constants";
+import { FETCH_MENU_URL, REST_API_MENU_URL } from "../constants";
+import useGetLocation from "./useGetLocation";
 
 const useRestaurantDetails = (resId) => {
   
@@ -8,10 +9,10 @@ const useRestaurantDetails = (resId) => {
   //get data from API
   async function getRestaurantInfo(resId) {
     try {
-      const data = await fetch(`${FETCH_MENU_URL}${resId}&catalog_qa=undefined&submitAction=ENTER`);
+      const data = await fetch(FETCH_MENU_URL+resId);
       const json = await data.json();
       setRestaurant(json.data.cards);
-      // console.log(json.data.cards);
+      console.log(json.data.cards);
     } catch (err) {
       console.log("There was an error", err);
     }

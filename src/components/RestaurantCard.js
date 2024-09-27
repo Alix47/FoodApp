@@ -1,4 +1,4 @@
-import { IMG_CDN_URL } from "../constants";
+import { IMG_CDN_URL, RES_CARD_IMG_CDN_URL } from "../constants";
 
 const RestaurantCard = ({
   name,
@@ -14,7 +14,7 @@ const RestaurantCard = ({
       <img
         loading="lazy"
         className="w-full border rounded-sm"
-        src={IMG_CDN_URL + cloudinaryImageId}
+        src={RES_CARD_IMG_CDN_URL + cloudinaryImageId}
         alt="image of a dish from the restaurant"
       ></img>
       <span className="block font-bold text-md mt-3 ">

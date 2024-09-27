@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
-import { IMG_CDN_URL } from "../constants";
-import { IMG__MENU_ITEM_CDN_URL } from "../constants";
+import { IMG_CDN_URL, RES_CARD_IMG_CDN_URL } from "../constants";
 import Shimmer from "./Shimmer";
 import useRestaurantDetails from "../utils/useRestaurantDetails";
 import { addItem, decreamentItem } from "../utils/cartSlice";
@@ -13,7 +12,7 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const restaurant = useRestaurantDetails(resId);
-  const restaurantDetails = restaurant && restaurant[0].card.card.info;
+  const restaurantDetails = restaurant && restaurant[2].card.card.info;
   const menuDetails =
     restaurant &&
     restaurant[restaurant.length - 1].groupedCard.cardGroupMap.REGULAR.cards;
@@ -94,7 +93,7 @@ const RestaurantMenu = () => {
             <img
               loading="lazy"
               className="w-80 h-52 rounded-sm"
-              src={IMG_CDN_URL + restaurantDetails?.cloudinaryImageId}
+              src={RES_CARD_IMG_CDN_URL + restaurantDetails?.cloudinaryImageId}
               alt="restaurant dish image"
             />
             <div className="">
@@ -362,9 +361,7 @@ const RestaurantMenu = () => {
                     <div className="flex w-[508px] flex-col gap-4 justify-center items-center  m-8 p-8 bg-white shadow-md">
                       <img
                         className="w-96"
-                        src={
-                          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/2xempty_cart_yfxml0"
-                        }
+                        src={RES_CARD_IMG_CDN_URL}
                         alt="empty cart"
                       />
                       <span className="font-poppins font-bold">

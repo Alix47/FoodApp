@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import {  API_URL } from "../constants";
+import {  API_URL, swiggyAPI } from "../constants";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData, getNumberFromString } from "../utils/helper";
@@ -31,7 +31,7 @@ const Body = () => {
 
   async function getRestaurants(url) {
     try {
-      const data = await fetch(`${url}lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`);
+      const data = await fetch(swiggyAPI(latitude,longitude));
       const json = await data.json();
 
       if (url === API_URL || offset === 0) {
