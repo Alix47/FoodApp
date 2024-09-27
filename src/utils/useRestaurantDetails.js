@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FETCH_MENU_URL, REST_API_MENU_URL } from "../constants";
-import useGetLocation from "./useGetLocation";
 
 const useRestaurantDetails = (resId) => {
   

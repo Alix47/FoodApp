@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { IMG_CDN_URL, RES_CARD_IMG_CDN_URL } from "../constants";
+import { RES_CARD_IMG_CDN_URL } from "../constants";
 import Shimmer from "./Shimmer";
 import useRestaurantDetails from "../utils/useRestaurantDetails";
 import { addItem, decreamentItem } from "../utils/cartSlice";
@@ -240,7 +240,7 @@ const RestaurantMenu = () => {
                                             <img
                                               className="w-40 h-auto max-sm:max-w-[100px]  max-sm:aspect-auto"
                                               src={
-                                                IMG_CDN_URL +
+                                                RES_CARD_IMG_CDN_URL +
                                                 item.card.info.imageId
                                               }
                                               alt="dish image"
@@ -318,7 +318,7 @@ const RestaurantMenu = () => {
                                   <div className="item-image-cart min-w-[10rem] flex flex-col justify-between items-center gap-3">
                                     <img
                                       className="w-40 h-auto max-sm:max-w-[100px]  max-sm:aspect-auto"
-                                      src={IMG_CDN_URL + item.card.info.imageId}
+                                      src={RES_CARD_IMG_CDN_URL + item.card.info.imageId}
                                       alt="dish image"
                                       onError={(event) =>
                                         (event.target.style.display = "none")

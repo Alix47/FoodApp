@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { IMG__MENU_ITEM_CDN_URL, RES_CARD_IMG_CDN_URL } from "../constants";
+import { RES_CARD_IMG_CDN_URL } from "../constants";
 import { addItem, decreamentItem, clearCart } from "../utils/cartSlice";
 
 const Cart = () => {
