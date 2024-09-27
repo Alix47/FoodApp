@@ -28,7 +28,7 @@ const Body = () => {
   const { locationGlobal } = useContext(LocationContext);
   const latitude = locationGlobal?.coordinates?.latitude;
   const longitude = locationGlobal?.coordinates?.longitude;
-
+  const API_URL = swiggyAPI(latitude,longitude);
   async function getRestaurants(url) {
     try {
       const data = await fetch(swiggyAPI(latitude,longitude));
